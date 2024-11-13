@@ -1,0 +1,35 @@
+{
+  "name": "lastfm-scrobbler",
+  "version": "1.0.0",
+  "description": "Last.fm scrobbler using Discord Rich Presence",
+  "main": "index.js",
+  "bin": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "axios": "^1.7.7",
+    "crypto": "^1.0.1",
+    "discord-rpc": "^4.0.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "node-fetch": "^2.6.1"
+  },
+  "pkg": {
+    "targets": [
+      "node16-linux-x64",
+      "node16-macos-x64",
+      "node16-win-x64"
+    ],
+    "assets": [
+      "tracks.json",
+      "log.txt"
+    ]
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "author": "Lemlestelse",
+  "license": "ISC"
+}
